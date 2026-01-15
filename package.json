@@ -1,0 +1,19 @@
+{
+  "name": "automaplayright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {    "test": "playwright test",
+    "test:ui": "playwright test tests/ui",
+    "test:login": "playwright test tests/ui/login-user.spec.ts",
+    "test:register": "playwright test tests/ui/register-user.spec.ts",
+    "test:practice": "playwright test tests/ui/practice-form.spec.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.8"
+  }
+}
