@@ -10,7 +10,7 @@ export default defineConfig({
   reporter: 'html',
 
   use: {
-    headless: false,
+    headless: true,
     viewport: null,  // usamos tamaño de ventana real
     baseURL: 'https://demoqa.com/automation-practice-form',
     actionTimeout: 10_000,
