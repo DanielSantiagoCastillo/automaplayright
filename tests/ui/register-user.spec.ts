@@ -9,6 +9,7 @@ test.describe('Registro de usuario - DemoQA Book Store', () => {
   test('Registro exitoso o bloqueo por CAPTCHA', async ({ page }) => {
     const register = new RegisterUserPage(page);
 
+    // Parametros de ingreso
     await register.abrirPaginaPrincipal();
     await register.navegarAlFormularioDeRegistro();
     await register.escribirNombre('NombreTest');
@@ -33,6 +34,7 @@ test.describe('Registro de usuario - DemoQA Book Store', () => {
   test('Registro con contraseña inválida (con o sin CAPTCHA)', async ({ page }) => {
     const register = new RegisterUserPage(page);
 
+    // Parametros de ingreso
     await register.abrirPaginaPrincipal();
     await register.navegarAlFormularioDeRegistro();
     await register.escribirNombre('NombreTest');

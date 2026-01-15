@@ -5,6 +5,7 @@ test.describe('Practice Form - DemoQA', () => {
   test('Registrar estudiante con todos los datos válidos', async ({ page }) => {
     const form = new PracticeFormPage(page);
 
+    // Parametros de ingreso
     await form.abrirPaginaPracticeForm();
 
     await form.escribirFirstName('Juan');
@@ -15,7 +16,7 @@ test.describe('Practice Form - DemoQA', () => {
     await form.seleccionarFechaNacimiento('14 Jan 1995');
     await form.escribirSubject('Maths');
     await form.seleccionarHobbies('Sports, Reading');
-    await form.cargarImagenValida(); // asegúrate de que la ruta del PNG exista
+    await form.cargarImagenValida();
     await form.escribirCurrentAddress('Calle falsa 123, Ciudad X');
     await form.seleccionarEstado('NCR');
     await form.seleccionarCiudad('Delhi');
